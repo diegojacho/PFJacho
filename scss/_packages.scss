@@ -1,0 +1,239 @@
+.main-packages{
+    background-color:white ;
+}
+
+.packages{
+    display: grid;
+    grid-template-areas: "deal1 deal1 package1"
+                        "package2 deal2 deal2"
+                        "deal3 deal3 package3";
+    row-gap: 50px;
+    background-color: white;
+
+}
+
+.section-heading, .section-heading-bestalbum {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    margin: 10px 0 40px;
+    color: black;
+    border-bottom: 4px black solid;
+}
+
+.section-title {
+    background: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.section-title:hover{
+    cursor: pointer;
+
+}
+.packages img{
+    width: 100%;    
+    object-fit: cover;
+}
+
+.packages h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: black ;
+}
+.deal1{
+    grid-area: deal1;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.package1 p, .package2 p, .package3 p{
+    padding: 20px;
+}
+.package1 {
+    grid-area: package1;
+    width: 100%;
+    font-size: 3vw;
+    text-align: justify; 
+    padding: 5px;
+    transform: translate(-1000%, 0%); 
+}
+
+.package2 {
+    grid-area: package2;
+    width: 100%;
+    font-size: 3vw;
+    text-align: justify; 
+    padding: 5px;
+    transform: translate(-1000%, 0%); 
+}
+
+.package3 {
+    grid-area: package3;
+    width: 100%;
+    font-size: 3vw;
+    text-align: justify; 
+    padding: 5px;
+    transform: translate(-1000%, 0%); 
+}
+
+.packages button{
+    font-size: 14px;
+    text-decoration: double;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 26px;
+    margin: 5px;
+    width: 120px;
+    background-color: whitesmoke;
+}
+
+.packages button:hover{
+    cursor: pointer;
+    background-color:rgb(179, 129, 45);
+    color: white;
+    transition: 1s;
+
+}
+.deal1 .package1{
+    position: absolute;
+
+}
+
+.deal1:hover{
+    opacity: 50%;
+    transition: 1s;
+    cursor: pointer;
+}
+.deal1:hover +.package1{
+    opacity: 50%;
+    transform: translate(0%, 0%);
+    transition: 0.9s;
+}
+
+.package1:hover{
+    opacity: 100%;
+    transform: translate(0%, 0%);
+    cursor: pointer;
+}
+
+.deal2:hover{
+    opacity: 50%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.deal2:hover +.package2{
+    opacity: 50%;
+    transform: translate(0%, 0%);
+    transition: 0.9s;
+}
+.package2:hover{
+    opacity: 100%;
+    transform: translate(0%, 0%);
+    cursor: pointer;
+}
+.deal3:hover{
+    opacity: 50%;
+    transition: 1s;
+    cursor: pointer;
+}
+.deal3:hover +.package3{
+    opacity: 50%;
+    transform: translate(0%, 0%);
+    transition: 0.9s;
+}
+
+.package3:hover{
+    opacity: 100%;
+    transform: translate(0%, 0%);
+    cursor: pointer;
+}
+.deal2{
+    grid-area: deal2;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+   
+}
+.deal3{
+    grid-area: deal3;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.promos{
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"newgear newarrivals "
+                        "newalbum turntable"
+                        ;
+    margin-top: 10px;
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+.gear{
+    grid-area: newgear;
+    position: relative;
+}
+
+.albumdeal{
+    grid-area: newalbum;
+    position: relative;
+}
+.arrivals{
+    grid-area: newarrivals;
+    position: relative;
+}
+
+.recordeal{
+    grid-area: turntable;
+    position: relative;
+}
+
+.promos img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.promos h3{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, 0%) ;
+    z-index: 2;
+}
+
+.promos h3:hover{
+    color: white;
+    text-decoration: underline;
+}
+.promos img:hover{
+    opacity: 60%;
+    transition: 1s;
+
+}
+
+@media (max-width:420px){
+    .promos{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    }

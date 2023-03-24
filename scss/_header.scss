@@ -1,0 +1,111 @@
+.promotion{
+    background-color: rgb(220, 148, 71);
+    width:100%;
+    height: 3%;
+    z-index: 1;
+    position:fixed;
+    h3{
+        font-size:1rem;
+        font-weight: 600;
+    }
+}
+
+.promo_detail{
+    text-decoration: underline;
+    & :hover{
+        cursor: pointer;
+        color: red;
+        font-size:1.2rem;
+    }
+}
+
+.navegador {
+    background-color: white;
+    border-bottom: 5px solid black;
+    width: 100%;
+    height: 5.2rem;
+    ul{
+        margin-top: 3em;
+        list-style: none;
+        transition: 0.5s;
+        li a{
+            display: block;
+            text-transform: uppercase;
+            color: black;
+            text-decoration: none;
+            font-size: 1.4rem;
+            padding: 10px 10px;
+            }
+            li input{
+                margin-top: 1em;
+                height: 1.65rem;
+            }
+            li button{
+                margin-top: 1em;
+            }
+            & :hover{
+                text-decoration: underline;
+                }
+    }
+}
+
+.navegador .logo{
+    width:10em;
+    height: 2.6em;
+    object-fit: cover;
+    margin: 50px 0 20px 10px;
+}
+
+.navegador .fa-bars{
+    display: none;
+}
+
+.navegador .fa-search{
+    font-size: 1.4rem;
+    margin: 1px;
+}
+
+.navegador .fa-cart-shopping{
+    font-size: 1.4rem;
+    margin: 1px;
+}
+
+.navegador .active{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:420px){
+    .navegador .fa-bars{
+        display: block;
+        font-size: 26px;
+        margin-top:30px;
+        padding: 10px;
+    }
+    .navegador .fa-bars:hover+ ul{
+        right: 0;
+    }
+    .navegador ul:hover{
+        right:0;
+    }
+    .navegador ul {
+        right:-350px;
+        background-color: white;
+        opacity: 90%;
+        position: fixed;
+        width: 250px;
+        bottom: 0;
+        top:0.5%;
+        height: 100vh;
+        z-index: 300;
+        flex-direction: column;
+    }
+    .navegador ul li input, .navegador ul li button{
+        display: none;
+    }
+    .navegador ul li a{
+        color: black;
+        margin-top: 15px ;
+        text-align: center;
+    }
+}

@@ -1,0 +1,141 @@
+.shipping{
+    border: 2px solid black;
+    gap: 35px;
+}
+
+.shipping-left{
+    width: 20%;
+}
+
+.shipping-right p{
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 700;
+    width: 100%;
+    margin-left: 2.4rem;
+}
+
+    @media (max-width:420px){
+        .shipping-right p{
+            font-size: 3.5vw;
+        }
+    }
+
+.freeshipment{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+.shipping-img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.newreleases, .vinylsets{
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    object-fit: cover;
+    margin: 5px;
+    padding: 5px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.releases, .sets{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 18vw;
+    height: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: transform ease .5s, box-shadow ease .5s;
+}
+.releases img, .sets img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.releases h5, .sets h5{
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.5vw;
+    margin:5px;
+}
+.releases h4, .sets h4{
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.8vw;
+    margin: 2px;
+}
+
+.releases button, .sets button{
+    font-size: 1.8vw;
+    background-color: rgba(253, 192, 79, 0.908);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px;
+    padding: 4px;
+}
+
+.cart-bt:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    transition: s ease-in;
+
+}
+.releases:hover, .sets:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.categories div{
+    display: flex;
+    background-color:#FFD764 ;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 200px;
+}
+
+.categories div:hover{
+    cursor: pointer;
+    opacity: 80%;
+    background-color:#FFB057 ;
+}
+.categories h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.categories h3:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:420px){
+    .categories{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        padding: 10px;
+    } 
+}

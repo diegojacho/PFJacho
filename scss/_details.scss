@@ -1,0 +1,63 @@
+.detail-deals{
+    width: 100%;
+    img{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+    div{
+        margin: 10px 0 10px 0;
+    }
+}
+
+.price-drop{
+    color: red;
+    text-decoration: line-through;
+}
+.cart-dt{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    & :hover{
+        opacity: 80%;
+        border: 3px solid black;
+        font-size: 1.2rem;
+    }
+}
+.title-dt{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.big-sale{
+    margin: 1rem;
+    row-gap: 1px;
+    h3{
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    p{
+        font-size:1.2rem;
+        font-weight: 350;
+    }
+    & p:hover{
+        cursor: pointer;
+        font-size: 1.4rem;
+        font-weight: 1000;
+    }
+}
+
+.title-sale{
+    background-color: rgb(244,101,2);
+    text-transform: uppercase;
+}
+.sale1, .sale3{
+    border: 3px solid black;
+    background-color: rgb(242,145,75);
+}
+
+.sale2{
+    border: 3px solid black;
+    background-color:#FFB97E;
+}

@@ -1,0 +1,201 @@
+    .hero-section{
+        gap: 1em;
+        margin: 0.1em;
+        margin-bottom: 1em;
+        white-space: none;
+    }
+    .cover-left{
+        width: 42%;
+    }
+    .cover-left h1{
+        font-size: 5.8rem;
+        font-weight: normal;
+        margin: 0;
+        margin-left: 0.1em;
+    }
+    .subhead{
+        font-size: 1.8rem;
+        font-weight: 2;
+        text-align: center;
+        padding: 0.5em;
+    }
+    .cover-button{
+        gap: 2em;
+        padding: 0.1em;
+        margin-left: 0.5em;
+    }
+    .cover-button a{
+        background-color: rgb(242, 196, 110);
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        margin-top: 1em;
+        border-radius: 1.9em;
+        padding: 1em 2em;
+    }
+    .cover-button a:hover{
+        background-color: rgb(239, 209, 154) ;
+    }
+    .cover-right{
+        flex-grow:1;
+        background-image: url(../multimedia/images/heroimage.tif);
+        background-size:100%;
+        transition: background-size 900ms;
+    }
+    .cover-right:hover{
+        background-size: 102%;
+    }
+
+    @media (max-width:420px){
+        .hero-section{
+            height: 300px;
+        }
+        .cover-left{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 25px;
+            opacity: 100%;
+            z-index: 20;
+        }
+        .cover-left h1{
+            font-size: 3rem;
+            color: black;
+            text-shadow: 10em;
+            font-weight: 800;
+        }
+        .subhead {
+            font-size: 1.4rem;
+            margin-bottom: 0;
+            font-weight: 600;
+            text-shadow: 20em;
+
+        }
+        
+        .cover-button a{
+            font-size: 0.8rem;
+            margin-top: none;
+        }
+        
+        .cover-right{
+            opacity: 50%;
+        }
+        .cover-img{
+            position:relative;
+            width: 100%;
+        }
+
+
+    }
+
+.display_record{
+    display:grid;
+    grid-template-areas:"record1  .       record4"
+                        ".      record2      .  "
+                        "record5         .       record3";
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    margin:1rem 0 1rem 0;  
+}
+
+.record1,.record2,.record3,.record4,.record5{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-bottom: 2px solid;
+    border-color: black;
+    position: relative;
+}
+.record1{
+    grid-area:record1;
+   
+}
+.display_record img{
+    object-fit: cover;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.display_record img:hover{
+    opacity:60%;
+}
+.record2{
+    grid-area: record2;
+}
+.record3{
+    grid-area: record3;
+}
+.record4{
+    grid-area: record4;
+}
+.record5{
+    grid-area:record5;
+}
+
+.recordbuy{
+    background-color: rgb(213, 155, 92);
+    color: rgb(255, 255, 255);
+    width: 65px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20%;
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1%;
+   
+}
+
+.recordbuy:hover{
+    opacity: 100%;
+    border: 0.1rem solid white;
+    transition: 500ms ease-in-out;
+}
+.section-title-album {
+    background:  rgb(230, 166, 57);
+    font-size: 30px;
+    padding: 10px;
+}
+.bestalbums{
+    background-color: rgb(230, 166, 57);
+    width: 100%;
+    height: 100%;
+}
+
+.albumtitle{
+    flex: 1 0 100%;
+    margin: 1rem 0 1rem 0;
+    color: white;
+}
+
+.albumtitle a{
+    text-decoration: underline;
+    color: white;
+    position: relative;
+    font-size: 1.2rem;
+    padding: none;
+    text-align: center;
+}
+
+.albumtitle a:hover{
+    opacity: 50%;
+   text-decoration: underline;
+}
+.album{
+    margin: 0 0 1rem 0;
+}
+.bestalbums .album img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+
+}
