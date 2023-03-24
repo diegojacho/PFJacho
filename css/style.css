@@ -352,6 +352,28 @@
   grid-template-areas: "deal1 deal1 package1" "package2 deal2 deal2" "deal3 deal3 package3";
   row-gap: 50px;
   background-color: white; }
+  .packages img {
+    width: 100%;
+    object-fit: cover; }
+  .packages h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: black; }
+  .packages button {
+    font-size: 14px;
+    text-decoration: double;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 26px;
+    margin: 5px;
+    width: 120px;
+    background-color: whitesmoke; }
+    .packages button:hover {
+      cursor: pointer;
+      background-color: #b3812d;
+      color: white;
+      transition: 1s; }
 
 .section-heading, .section-heading-bestalbum {
   width: 100%;
@@ -365,19 +387,8 @@
   background: white;
   font-size: 30px;
   padding: 10px; }
-
-.section-title:hover {
-  cursor: pointer; }
-
-.packages img {
-  width: 100%;
-  object-fit: cover; }
-
-.packages h4 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  padding: 10px;
-  color: black; }
+  .section-title:hover {
+    cursor: pointer; }
 
 .deal1 {
   grid-area: deal1;
@@ -414,22 +425,6 @@
   text-align: justify;
   padding: 5px;
   transform: translate(-1000%, 0%); }
-
-.packages button {
-  font-size: 14px;
-  text-decoration: double;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 26px;
-  margin: 5px;
-  width: 120px;
-  background-color: whitesmoke; }
-
-.packages button:hover {
-  cursor: pointer;
-  background-color: #b3812d;
-  color: white;
-  transition: 1s; }
 
 .deal1 .package1 {
   position: absolute; }
@@ -502,6 +497,26 @@
   margin-top: 10px;
   column-gap: 5px;
   cursor: pointer; }
+  .promos img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+    .promos img:hover {
+      opacity: 60%;
+      transition: 1s; }
+  .promos h3 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 2; }
+    .promos h3:hover {
+      color: white;
+      text-decoration: underline; }
 
 .gear {
   grid-area: newgear;
@@ -518,30 +533,6 @@
 .recordeal {
   grid-area: turntable;
   position: relative; }
-
-.promos img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%; }
-
-.promos h3 {
-  text-align: center;
-  color: white;
-  font-size: 28px;
-  text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  z-index: 2; }
-
-.promos h3:hover {
-  color: white;
-  text-decoration: underline; }
-
-.promos img:hover {
-  opacity: 60%;
-  transition: 1s; }
 
 @media (max-width: 420px) {
   .promos {
@@ -914,32 +905,31 @@
   height: 100%;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transition: transform ease .5s, box-shadow ease .5s; }
-
-.releases img, .sets img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%; }
-
-.releases h5, .sets h5 {
-  font-weight: 200;
-  text-align: center;
-  font-size: 1.5vw;
-  margin: 5px; }
-
-.releases h4, .sets h4 {
-  font-weight: 400;
-  text-align: center;
-  font-size: 1.8vw;
-  margin: 2px; }
-
-.releases button, .sets button {
-  font-size: 1.8vw;
-  background-color: rgba(253, 192, 79, 0.908);
-  border: none;
-  border-radius: 10px;
-  width: 100%;
-  margin: 5px;
-  padding: 4px; }
+  .releases img, .sets img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  .releases h5, .sets h5 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 5px; }
+  .releases h4, .sets h4 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.8vw;
+    margin: 2px; }
+  .releases button, .sets button {
+    font-size: 1.8vw;
+    background-color: rgba(253, 192, 79, 0.908);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px;
+    padding: 4px; }
+  .releases:hover, .sets:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25); }
 
 .cart-bt:hover {
   cursor: pointer;
@@ -947,37 +937,29 @@
   border: 1px solid black;
   transition: s ease-in; }
 
-.releases:hover, .sets:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25); }
-
 .categories {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
   row-gap: 10px;
   padding: 10px; }
-
-.categories div {
-  display: flex;
-  background-color: #FFD764;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  height: 200px; }
-
-.categories div:hover {
-  cursor: pointer;
-  opacity: 80%;
-  background-color: #FFB057; }
-
-.categories h3 {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  text-align: center; }
-
-.categories h3:hover {
-  text-decoration: underline; }
+  .categories div {
+    display: flex;
+    background-color: #FFD764;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 200px; }
+    .categories div:hover {
+      cursor: pointer;
+      opacity: 80%;
+      background-color: #FFB057; }
+  .categories h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center; }
+    .categories h3:hover {
+      text-decoration: underline; }
 
 @media (max-width: 420px) {
   .categories {
