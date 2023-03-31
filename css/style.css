@@ -349,7 +349,7 @@
 
 .packages {
   display: grid;
-  grid-template-areas: "deal1 deal1 package1" "package2 deal2 deal2" "deal3 deal3 package3";
+  grid-template-areas: "deal1    deal1  package1" "package2 deal2  deal2" "deal3    deal3  package3";
   row-gap: 50px;
   background-color: white; }
   .packages img {
@@ -398,9 +398,10 @@
   border: 2px solid black;
   padding: 10px;
   border-radius: 15px; }
-
-.package1 p, .package2 p, .package3 p {
-  padding: 20px; }
+  .deal1:hover {
+    opacity: 50%;
+    transition: 1s;
+    cursor: pointer; }
 
 .package1 {
   grid-area: package1;
@@ -409,6 +410,8 @@
   text-align: justify;
   padding: 5px;
   transform: translate(-1000%, 0%); }
+  .package1 p {
+    padding: 20px; }
 
 .package2 {
   grid-area: package2;
@@ -417,6 +420,8 @@
   text-align: justify;
   padding: 5px;
   transform: translate(-1000%, 0%); }
+  .package2 p {
+    padding: 20px; }
 
 .package3 {
   grid-area: package3;
@@ -425,14 +430,11 @@
   text-align: justify;
   padding: 5px;
   transform: translate(-1000%, 0%); }
+  .package3 p {
+    padding: 20px; }
 
 .deal1 .package1 {
   position: absolute; }
-
-.deal1:hover {
-  opacity: 50%;
-  transition: 1s;
-  cursor: pointer; }
 
 .deal1:hover + .package1 {
   opacity: 50%;

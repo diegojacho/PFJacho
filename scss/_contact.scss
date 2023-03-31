@@ -1,7 +1,7 @@
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "store1 team1"
+    grid-template-areas:"store1 team1"
                         "store2 team2"
                         "store3 team3";
     column-gap: 10px;
