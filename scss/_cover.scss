@@ -12,7 +12,7 @@
         position: absolute;
         color: white;
         font-weight: normal;
-        font-size: 5.8rem;
+        font-size: clamp(4rem, 4.5vw, 6rem);
         text-transform:  capitalize;
         padding: 0.8rem;
         margin-top: none;

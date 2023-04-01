@@ -133,29 +133,23 @@
         text-align: center;
     }
 }
- 
 .team2{
     grid-area: team2;
     & img:hover {
         opacity: 50%;
     }
     .employee1{
-        position: absolute;
-        top:0;
+        @include contact-employee;
         transform: translate(1000%, 100%); 
-        text-align: center;
+        
     }
     .employee2{
-        position: absolute;
-        top:0;
+        @include contact-employee;
         transform: translate(1000%, 450%); 
-        text-align: center;
     }
     .employee3{
-        position: absolute;
-        top:0;
+        @include contact-employee;
         transform: translate(1000%, 800%); 
-        text-align: center;
     }
     & img:hover +.employee1{
         position: absolute;
