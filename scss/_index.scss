@@ -40,7 +40,7 @@
     }
     .cover-right{
         flex-grow:1;
-        background-image: url(../multimedia/images/heroimage.tif);
+        background-image: url(../multimedia/images/heroimage.png);
         background-size:100%;
         transition: background-size 900ms;
     }
@@ -48,7 +48,7 @@
         background-size: 102%;
     }
 
-    @media (max-width:420px){
+    @media (max-width:760px){
         .hero-section{
             height: 300px;
         }
@@ -140,7 +140,7 @@
 }
 
 .recordbuy{
-    background-color: rgb(213, 155, 92);
+    background-color: $body-color;
     color: rgb(255, 255, 255);
     width: 65px;
     height: 50px;
@@ -161,12 +161,12 @@
     transition: 500ms ease-in-out;
 }
 .section-title-album {
-    background:  rgb(230, 166, 57);
+    background:  $body-color;
     font-size: 30px;
     padding: 10px;
 }
 .bestalbums{
-    background-color: rgb(230, 166, 57);
+    background-color:$body-color;
     width: 100%;
     height: 100%;
 }

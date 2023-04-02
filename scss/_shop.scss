@@ -74,13 +74,7 @@
         margin: 2px;
     }
     button{
-        font-size: 1.8vw;
-        background-color: rgba(253, 192, 79, 0.908);
-        border: none;
-        border-radius: 10px;
-        width: 100%;
-        margin: 5px;
-        padding: 4px;
+      @include button-shop;
     }
     &:hover{
         transform: translateY(-5px);
@@ -125,6 +119,7 @@
         } 
     }
 }
+
 @media (max-width:420px){
     .categories{
         display: grid;

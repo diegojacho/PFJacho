@@ -4,3 +4,13 @@
     text-align: center;
 
 }
+
+@mixin button-shop{
+    font-size: 1.8vw;
+    background-color: rgba(253, 192, 79, 0.908);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px;
+    padding: 4px;
+}

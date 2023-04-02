@@ -1,5 +1,5 @@
 .promotion{
-    background-color: rgb(220, 148, 71);
+    background-color: $promo-color;
     width:100%;
     height: 30px;
     z-index: 100;
@@ -28,7 +28,7 @@
     border-bottom: 5px solid black;
     width: 100%;
     height: 5rem;
-    overflow: hidden;
+    overflow-x: hidden;
     ul{
         margin-top: 3em;
         list-style: none;
@@ -42,76 +42,83 @@
             padding: 10px 10px;
             }
             li input{
-                margin-top: 1em;
+                margin: 1em 0.2em;
                 height: 1.65rem;
             }
-            li button{
-                margin-top: 1em;
+            li i{
+                margin: 0.8em 0.4em;
+                
             }
             & :hover{
                 text-decoration: underline;
                 }
     }
+    .logo{
+        width:10em;
+        height: 2.6em;
+        object-fit: cover;
+        margin: 50px 0 20px 10px;
+    }
+    .fa-bars{
+        display: none;
+    }
+    .fa-search{
+        font-size: 1.3rem;
+    }
+    .fa-cart-shopping{
+        font-size: 1.3rem;
+    }
+    .active{
+        background-color: black;
+        color: white;
+    }
 }
 
-.navegador .logo{
-    width:10em;
-    height: 2.6em;
-    object-fit: cover;
-    margin: 50px 0 20px 10px;
-}
-
-.navegador .fa-bars{
-    display: none;
-}
-
-.navegador .fa-search{
-    font-size: 1.4rem;
-    margin: 1px;
-}
-
-.navegador .fa-cart-shopping{
-    font-size: 1.4rem;
-    margin: 1px;
-}
-
-.navegador .active{
-    background-color: black;
-    color: white;
-}
-
-@media (max-width:420px){
-    .navegador .fa-bars{
+@media (max-width:890px){
+    .navegador {
+        ul {
+            right:-350px;
+            background-color: white;
+            opacity: 90%;
+            position: fixed;
+            width: 250px;
+            bottom: 0;
+            top:0.5%;
+            height: 100vh;
+            z-index: 300;
+            flex-direction: column;
+            padding: 0;
+            margin: 26px 0 0 0;
+            &:hover {
+                right: 0;
+            }
+            li input{
+                display: none;
+            }
+            li a{
+                color: black;
+                margin-top: 15px ;
+                text-align: center;
+            }
+        }
+        .fa-bars{
         display: block;
         font-size: 26px;
-        margin-top:30px;
+        margin-top:25px;
         padding: 10px;
+        }
+        .active{
+            background-color: black;
+            color: white;
+        }
+        .fa-search, .fa-cart-shopping{
+            display: block;
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 15px;
+        }
     }
     .navegador .fa-bars:hover+ ul{
         right: 0;
-    }
-    .navegador ul:hover{
-        right:0;
-    }
-    .navegador ul {
-        right:-350px;
-        background-color: white;
-        opacity: 90%;
-        position: fixed;
-        width: 250px;
-        bottom: 0;
-        top:0.5%;
-        height: 100vh;
-        z-index: 300;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .navegador ul li input, .navegador ul li button{
-        display: none;
-    }
-    .navegador ul li a{
-        color: black;
-        margin-top: 15px ;
-        text-align: center;
     }
 }

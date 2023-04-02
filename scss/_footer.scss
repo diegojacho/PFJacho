@@ -3,72 +3,83 @@
     color: white;
     padding: 1.5em;
     margin-top:0.5em;
+    .footer-quick{
+        h3{
+            font-size: 2rem;
+            padding: 0 0 0.5em 0;
+            border-bottom:2px solid white;
+            width: 100%;   
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+            margin: 0.5em 0 0.5em 0;
+            font-weight: 50;
+        }
+    }
+    .footer-connect {
+        h3{
+            font-size: 2rem;
+            padding: 0 0 0.5em 0;
+            border-bottom:2px solid white;
+            width: 100%;   
+        }
+        p{
+        font-size:1rem;
+        margin: 0.5em 0 0.5em 0;
+        font-weight: 50;   
+        }
+        button{
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            margin:0;
+            background-color: rgb(230, 166, 57);
+            padding: 0.2em;
+        }
+        input{
+            margin: 0 0 0 0;
+            padding: 0.2em;
+            border: none;
+        }
+        a{
+            color: white;
+        }
+        .footer-disclaim{
+            font-size: 0.8rem;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            margin: 0.5em 0 0.5em 0;
+            padding-left: 0;
+            li{
+                margin: 10px;
+                size: 15px;
+            }
+            .fa-square-facebook, .fa-square-twitter, .fa-square-instagram,.fa-square-google-plus, .fa-square-youtube{
+                font-size: 1.8rem;
+                color: white;
+                border-radius: 50%;
+            }
+        }
+    }
+    .footer-about {
+        h3{
+            font-size: 2rem;
+            padding: 0 0 0.5em 0;
+            border-bottom:2px solid white;
+            width: 100%;  
+        }
+        p{
+            font-size: 1rem;
+            margin: 0.5em 0 0.5em 0;
+            font-weight: 50;
+        }   
+    }
 }
 
-.footer-quick h3, .footer-connect h3, .footer-about h3{
-    font-size: 2rem;
-    padding: 0 0 0.5em 0;
-    border-bottom:2px solid white;
-    width: 100%;   
-}
-.footer-quick a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-    margin: 0.5em 0 0.5em 0;
-    font-weight: 50;
-}
-.footer-connect {
-    p{
-    font-size:1rem;
-    margin: 0.5em 0 0.5em 0;
-    font-weight: 50;   
-    }
-    button{
-        border: none;
-        font-size: 1rem;
-        font-weight: bold;
-        margin:0;
-        background-color: rgb(230, 166, 57);
-        padding: 0.2em;
-    }
-    input{
-        margin: 0 0 0 0;
-        padding: 0.2em;
-        border: none;
-    }
-    a{
-        color: white;
-    }
-    
-}
-
-.footer-connect .footer-disclaim{
-    font-size: 0.8rem;
-}
-
-.footer-about p{
-    font-size: 1rem;
-    margin: 0.5em 0 0.5em 0;
-    font-weight: 50;
-}
-
-.socials{
-    list-style: none;
-    display: flex;
-    margin: 0.5em 0 0.5em 0;
-    padding-left: 0;
-    li{
-        margin: 10px;
-        size: 15px;
-    }
-}
-
-.fa-square-facebook, .fa-square-twitter, .fa-square-instagram,.fa-square-google-plus, .fa-square-youtube{
-    font-size: 1.8rem;
-    color: white;
-    border-radius: 50%;
-}
     @media (max-width:420px){
         .socials{
             padding-left: 0;

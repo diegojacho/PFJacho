@@ -1,7 +1,3 @@
-.main-packages{
-    background-color:white ;
-}
-
 .packages{
     display: grid;
     grid-template-areas:"deal1    deal1  package1"
@@ -36,8 +32,124 @@
         }
     }
 
-}
+    .deal1{
+        grid-area: deal1;
+        margin-top: 10px;
+        margin-left: 10px;
+        position: relative;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 15px;
+        &:hover {
+            opacity: 50%;
+            transition: 1s;
+            cursor: pointer;
+        }
+    }
 
+    .package1 {
+        grid-area: package1;
+        width: 100%;
+        font-size: 3vw;
+        text-align: justify; 
+        padding: 5px;
+        transform: translate(-1000%, 0%); 
+        p{
+            padding: 20px;
+        }
+        .package1{
+            position: absolute;
+        
+        }
+    }
+
+    .package2 {
+        grid-area: package2;
+        width: 100%;
+        font-size: 3vw;
+        text-align: justify; 
+        padding: 5px;
+        transform: translate(-1000%, 0%); 
+        p{
+            padding: 20px;
+        }
+    }
+
+    .package3 {
+        grid-area: package3;
+        width: 100%;
+        font-size: 3vw;
+        text-align: justify; 
+        padding: 5px;
+        transform: translate(-1000%, 0%); 
+        p{
+            padding: 20px;
+        }
+    }
+
+    .deal1:hover +.package1{
+        opacity: 50%;
+        transform: translate(0%, 0%);
+        transition: 0.9s;
+    }
+
+    .package1:hover{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        cursor: pointer;
+    }
+
+    .deal2:hover{
+        opacity: 50%;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .deal2:hover +.package2{
+        opacity: 50%;
+        transform: translate(0%, 0%);
+        transition: 0.9s;
+    }
+    .package2:hover{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        cursor: pointer;
+    }
+    .deal3:hover{
+        opacity: 50%;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .deal3:hover +.package3{
+        opacity: 50%;
+        transform: translate(0%, 0%);
+        transition: 0.9s;
+    }
+
+    .package3:hover{
+        opacity: 100%;
+        transform: translate(0%, 0%);
+        cursor: pointer;
+    }
+    .deal2{
+        grid-area: deal2;
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 15px;
+    
+    }
+    .deal3{
+        grid-area: deal3;
+        margin-top: 10px;
+        margin-left: 10px;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    
+}
 .section-heading, .section-heading-bestalbum {
     width: 100%;
     height: 25px;
@@ -45,135 +157,15 @@
     margin: 10px 0 40px;
     color: black;
     border-bottom: 4px black solid;
-}
-
-.section-title {
-    background: white;
-    font-size: 30px;
-    padding: 10px;
-    &:hover {
-        cursor: pointer;
+    .section-title {
+        background: white;
+        font-size: 30px;
+        padding: 10px;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
-
-.deal1{
-    grid-area: deal1;
-    margin-top: 10px;
-    margin-left: 10px;
-    position: relative;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 15px;
-    &:hover {
-        opacity: 50%;
-        transition: 1s;
-        cursor: pointer;
-    }
-}
-
-.package1 {
-    grid-area: package1;
-    width: 100%;
-    font-size: 3vw;
-    text-align: justify; 
-    padding: 5px;
-    transform: translate(-1000%, 0%); 
-    p{
-        padding: 20px;
-    }
-}
-
-.package2 {
-    grid-area: package2;
-    width: 100%;
-    font-size: 3vw;
-    text-align: justify; 
-    padding: 5px;
-    transform: translate(-1000%, 0%); 
-    p{
-        padding: 20px;
-    }
-}
-
-.package3 {
-    grid-area: package3;
-    width: 100%;
-    font-size: 3vw;
-    text-align: justify; 
-    padding: 5px;
-    transform: translate(-1000%, 0%); 
-    p{
-        padding: 20px;
-    }
-}
-
-.deal1 .package1{
-    position: absolute;
-
-}
-
-.deal1:hover +.package1{
-    opacity: 50%;
-    transform: translate(0%, 0%);
-    transition: 0.9s;
-}
-
-.package1:hover{
-    opacity: 100%;
-    transform: translate(0%, 0%);
-    cursor: pointer;
-}
-
-.deal2:hover{
-    opacity: 50%;
-    transition: 1s;
-    cursor: pointer;
-}
-
-.deal2:hover +.package2{
-    opacity: 50%;
-    transform: translate(0%, 0%);
-    transition: 0.9s;
-}
-.package2:hover{
-    opacity: 100%;
-    transform: translate(0%, 0%);
-    cursor: pointer;
-}
-.deal3:hover{
-    opacity: 50%;
-    transition: 1s;
-    cursor: pointer;
-}
-.deal3:hover +.package3{
-    opacity: 50%;
-    transform: translate(0%, 0%);
-    transition: 0.9s;
-}
-
-.package3:hover{
-    opacity: 100%;
-    transform: translate(0%, 0%);
-    cursor: pointer;
-}
-.deal2{
-    grid-area: deal2;
-    margin-top: 10px;
-    margin-right: 10px;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 15px;
-   
-}
-.deal3{
-    grid-area: deal3;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 15px;
-}
-
 .promos{
    display: grid;
     grid-template-columns: 1fr 1fr;
@@ -207,31 +199,29 @@
             text-decoration: underline;
         }
     }
+    .gear{
+        grid-area: newgear;
+        position: relative;
+    }
+    
+    .albumdeal{
+        grid-area: newalbum;
+        position: relative;
+    }
+    .arrivals{
+        grid-area: newarrivals;
+        position: relative;
+    }
+    
+    .recordeal{
+        grid-area: turntable;
+        position: relative;
+    }
 }
-
-.gear{
-    grid-area: newgear;
-    position: relative;
-}
-
-.albumdeal{
-    grid-area: newalbum;
-    position: relative;
-}
-.arrivals{
-    grid-area: newarrivals;
-    position: relative;
-}
-
-.recordeal{
-    grid-area: turntable;
-    position: relative;
-}
-
 @media (max-width:420px){
     .promos{
         display: flex;
         flex-direction: column;
         row-gap: 10px;
     }
-    }
+}
