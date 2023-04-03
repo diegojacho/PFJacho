@@ -8,26 +8,24 @@
     div{
         margin: 10px 0 10px 0;
     }
-}
-
-.price-drop{
-    color: red;
-    text-decoration: line-through;
-}
-.cart-dt{
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 1rem;
-    & :hover{
-        opacity: 80%;
-        border: 3px solid black;
-        font-size: 1.2rem;
+    .price-drop{
+        color: red;
+        text-decoration: line-through;
     }
-}
-.title-dt{
-    font-weight: 500;
-    font-size: 1.6rem;
+    .cart-dt{
+        @include button-shop;
+        width: 40%;
+        &:hover {
+            opacity: 80%;
+            border: 2px solid black;
+            font-size: 1rem;
+        }
+    }
+    .title-dt{
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+    
 }
 
 .big-sale{
@@ -43,21 +41,22 @@
     }
     & p:hover{
         cursor: pointer;
-        font-size: 1.4rem;
-        font-weight: 1000;
+        font-weight: 900;
+    }
+    .title-sale{
+        background-color: rgb(244,101,2);
+        text-transform: uppercase;
+    }
+    .sale1, .sale3{
+        border: 3px solid black;
+        background-color: rgb(242,145,75);
+    }
+    
+    .sale2{
+        border: 3px solid black;
+        background-color:#FFB97E;
     }
 }
-
-.title-sale{
-    background-color: rgb(244,101,2);
-    text-transform: uppercase;
-}
-.sale1, .sale3{
-    border: 3px solid black;
-    background-color: rgb(242,145,75);
-}
-
-.sale2{
-    border: 3px solid black;
-    background-color:#FFB97E;
+.video-sale{
+    text-align: center;
 }

@@ -102,64 +102,58 @@
     width: 100%;
     height: 100%;
     margin:1rem 0 1rem 0;  
+    img{
+        object-fit: cover;
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            opacity:60%;
+        }
+    }
+    .record1{
+        grid-area:record1;
+        @include record-home;
+       
+    }
+    .record2{
+        grid-area: record2;
+        @include record-home;
+    }
+    .record3{
+        grid-area: record3;
+        @include record-home;
+    }
+    .record4{
+        grid-area: record4;
+        @include record-home;
+    }
+    .record5{
+        grid-area:record5;
+        @include record-home;
+    }
+    .recordbuy{
+        background-color: $body-color;
+        color: rgb(255, 255, 255);
+        width: 65px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 20%;
+        position: absolute;
+        border: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1%;
+        &:hover {
+            opacity: 100%;
+            border: 0.1rem solid white;
+            transition: 500ms ease-in-out;
+        }
+       
+    }
 }
 
-.record1,.record2,.record3,.record4,.record5{
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-    border-bottom: 2px solid;
-    border-color: black;
-    position: relative;
-}
-.record1{
-    grid-area:record1;
-   
-}
-.display_record img{
-    object-fit: cover;
-    transition: 0.5s;
-    width: 100%;
-    height: 100%;
-}
-
-.display_record img:hover{
-    opacity:60%;
-}
-.record2{
-    grid-area: record2;
-}
-.record3{
-    grid-area: record3;
-}
-.record4{
-    grid-area: record4;
-}
-.record5{
-    grid-area:record5;
-}
-
-.recordbuy{
-    background-color: $body-color;
-    color: rgb(255, 255, 255);
-    width: 65px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 20%;
-    position: absolute;
-    border: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1%;
-   
-}
-
-.recordbuy:hover{
-    opacity: 100%;
-    border: 0.1rem solid white;
-    transition: 500ms ease-in-out;
-}
 .section-title-album {
     background:  $body-color;
     font-size: 30px;
@@ -169,33 +163,31 @@
     background-color:$body-color;
     width: 100%;
     height: 100%;
+    img {
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .albumtitle{
+        flex: 1 0 100%;
+        margin: 1rem 0 1rem 0;
+        color: white;
+        a{
+            text-decoration: underline;
+            color: white;
+            position: relative;
+            font-size: 1.2rem;
+            padding: none;
+            text-align: center;
+        }
+        &:hover {
+            opacity: 50%;
+            text-decoration: underline;
+        }
+    }
+    .album{
+        margin: 0 0 1rem 0;
+    }    
 }
 
-.albumtitle{
-    flex: 1 0 100%;
-    margin: 1rem 0 1rem 0;
-    color: white;
-}
-
-.albumtitle a{
-    text-decoration: underline;
-    color: white;
-    position: relative;
-    font-size: 1.2rem;
-    padding: none;
-    text-align: center;
-}
-
-.albumtitle a:hover{
-    opacity: 50%;
-   text-decoration: underline;
-}
-.album{
-    margin: 0 0 1rem 0;
-}
-.bestalbums .album img{
-    object-fit: cover;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-}

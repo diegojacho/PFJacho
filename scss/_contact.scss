@@ -263,6 +263,10 @@
         border-radius: 5px;
         font-size: 20px;
         padding: 5px;
+        &:hover {
+            opacity: 90%;
+            font-weight: 600;;
+        }
     }   
     :nth-child(6){
         flex-direction: row;
